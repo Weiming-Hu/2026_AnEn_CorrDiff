@@ -17,6 +17,7 @@ Precipitation downscaling transforms coarse resolution numerical weather predict
 ```
 .
 ├── datasets/               # Data loading and preprocessing
+│   ├── run_graphcast.py    # GraphCast forecasts generation script
 │   ├── GCnPRISM.py        # GraphCast and PRISM data pairing
 │   ├── Residual.py        # Residual computation for corrective approach
 │   └── PickleFolder.py    # Utilities for pickled data management
@@ -29,7 +30,6 @@ Precipitation downscaling transforms coarse resolution numerical weather predict
 │   └── SimpleUnet.py      # Basic U-Net implementation
 ├── utils/                  # Verification and utility functions
 │   ├── crps.py            # CRPS score decomposition (Hersbach 2000)
-│   ├── verify.py          # Forecast verification metrics
 │   ├── rel.py             # Reliability diagram calculations
 │   ├── download.py        # Data download utilities
 │   └── presets.py         # Visualization presets
